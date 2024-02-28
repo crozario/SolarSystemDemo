@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct AstronomicalObject {
+struct AstronomicalObject: Codable {
     let id = UUID()
     let name: String
     let imageName: String
+    let description: String
     
     var getAstronomicalObjectURL: URL? {
         Bundle.main.url(forResource: self.name.lowercased(), withExtension: "splineswift")

@@ -13,6 +13,15 @@ class HomeViewModel: ObservableObject {
     let astronomicalObjectService = AstronomicalObjectService()
     
     init() {
-        self.astronomicalObjects = astronomicalObjectService.fetchAstronomicalObjectService()
+        astronomicalObjectService.fetchAstronomicalObjects { result in
+            switch result {
+            case .success(let astronomicalObjects):
+                DispatchQueue.main.async {
+                    self.astronomicalObjects = astronomicalObjects
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }

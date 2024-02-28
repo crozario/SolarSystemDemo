@@ -20,7 +20,7 @@ struct AstronomicalObjectView: View {
                 .resizable()
                 .scaledToFit()
         }
-        .frame(width: 300, height: 150)
+        .frame(width: 340, height: 150)
         .overlay(alignment: .topLeading) {
             Text(astronomicalObject.name)
                 .font(.title.bold())
@@ -31,7 +31,7 @@ struct AstronomicalObjectView: View {
 
 struct AstronomicalObjectView_Previews: PreviewProvider {
     static var previews: some View {
-        let earthObject = AstronomicalObjectService().fetchAstronomicalObjectService()[0]
+        let earthObject = dev.astronomicalObject
         
         AstronomicalObjectView(astronomicalObject: earthObject)
     }

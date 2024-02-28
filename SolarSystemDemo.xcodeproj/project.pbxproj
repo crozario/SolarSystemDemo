@@ -26,7 +26,9 @@
 		C4FE66512B8E9F4C000B405C /* neptune.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66482B8E9F4C000B405C /* neptune.splineswift */; };
 		C4FE66522B8E9F4C000B405C /* saturn.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66492B8E9F4C000B405C /* saturn.splineswift */; };
 		C4FE66532B8E9F4C000B405C /* sun.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE664A2B8E9F4C000B405C /* sun.splineswift */; };
-		C4FE66552B8EB847000B405C /* venus.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66542B8EB847000B405C /* venus.splineswift */; };
+		C4FE66572B8ED111000B405C /* astronomical_objects.json in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66562B8ED111000B405C /* astronomical_objects.json */; };
+		C4FE665A2B8ED83D000B405C /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE66592B8ED83D000B405C /* PreviewProvider.swift */; };
+		C4FE665E2B8EDD06000B405C /* venus.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE665D2B8EDD06000B405C /* venus.splineswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +51,9 @@
 		C4FE66482B8E9F4C000B405C /* neptune.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = neptune.splineswift; sourceTree = "<group>"; };
 		C4FE66492B8E9F4C000B405C /* saturn.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = saturn.splineswift; sourceTree = "<group>"; };
 		C4FE664A2B8E9F4C000B405C /* sun.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun.splineswift; sourceTree = "<group>"; };
-		C4FE66542B8EB847000B405C /* venus.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = venus.splineswift; sourceTree = "<group>"; };
+		C4FE66562B8ED111000B405C /* astronomical_objects.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astronomical_objects.json; sourceTree = "<group>"; };
+		C4FE66592B8ED83D000B405C /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		C4FE665D2B8EDD06000B405C /* venus.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = venus.splineswift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,9 @@
 				C4FE66282B8D220F000B405C /* ViewModels */,
 				C4FE66292B8D2215000B405C /* Models */,
 				C4FE662E2B8D22EC000B405C /* Services */,
+				C4FE66582B8ED817000B405C /* Extensions */,
 				C4FE663E2B8E9E5F000B405C /* SplineAssets */,
+				C4FE66562B8ED111000B405C /* astronomical_objects.json */,
 				C4FE661D2B8D212A000B405C /* Assets.xcassets */,
 				C4FE661F2B8D212A000B405C /* Preview Content */,
 			);
@@ -140,6 +146,7 @@
 		C4FE663E2B8E9E5F000B405C /* SplineAssets */ = {
 			isa = PBXGroup;
 			children = (
+				C4FE665D2B8EDD06000B405C /* venus.splineswift */,
 				C4FE66402B8E9E7C000B405C /* jupiter.splineswift */,
 				C4FE66422B8E9F4C000B405C /* earth.splineswift */,
 				C4FE66452B8E9F4C000B405C /* mars.splineswift */,
@@ -148,10 +155,17 @@
 				C4FE66482B8E9F4C000B405C /* neptune.splineswift */,
 				C4FE66492B8E9F4C000B405C /* saturn.splineswift */,
 				C4FE664A2B8E9F4C000B405C /* sun.splineswift */,
-				C4FE66542B8EB847000B405C /* venus.splineswift */,
 				C4FE66432B8E9F4C000B405C /* uranus.splineswift */,
 			);
 			path = SplineAssets;
+			sourceTree = "<group>";
+		};
+		C4FE66582B8ED817000B405C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE66592B8ED83D000B405C /* PreviewProvider.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,12 +232,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FE66552B8EB847000B405C /* venus.splineswift in Resources */,
 				C4FE664F2B8E9F4C000B405C /* mercury.splineswift in Resources */,
 				C4FE66502B8E9F4C000B405C /* moon.splineswift in Resources */,
+				C4FE665E2B8EDD06000B405C /* venus.splineswift in Resources */,
 				C4FE66512B8E9F4C000B405C /* neptune.splineswift in Resources */,
 				C4FE66212B8D212A000B405C /* Preview Assets.xcassets in Resources */,
 				C4FE66412B8E9E7C000B405C /* jupiter.splineswift in Resources */,
+				C4FE66572B8ED111000B405C /* astronomical_objects.json in Resources */,
 				C4FE664E2B8E9F4C000B405C /* mars.splineswift in Resources */,
 				C4FE661E2B8D212A000B405C /* Assets.xcassets in Resources */,
 				C4FE664B2B8E9F4C000B405C /* earth.splineswift in Resources */,
@@ -245,6 +260,7 @@
 				C4FE661A2B8D2128000B405C /* SolarSystemDemoApp.swift in Sources */,
 				C4FE66302B8D2301000B405C /* AstronomicalObjectService.swift in Sources */,
 				C4FE663D2B8E7BA9000B405C /* AstronomicalObjectDetailView.swift in Sources */,
+				C4FE665A2B8ED83D000B405C /* PreviewProvider.swift in Sources */,
 				C4FE662D2B8D22BC000B405C /* HomeViewModel.swift in Sources */,
 				C4FE66352B8D2667000B405C /* AstronomicalObjectView.swift in Sources */,
 			);
