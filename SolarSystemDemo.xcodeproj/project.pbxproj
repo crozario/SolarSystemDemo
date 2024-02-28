@@ -8,17 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		C4FE661A2B8D2128000B405C /* SolarSystemDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE66192B8D2128000B405C /* SolarSystemDemoApp.swift */; };
-		C4FE661C2B8D2128000B405C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE661B2B8D2128000B405C /* ContentView.swift */; };
+		C4FE661C2B8D2128000B405C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE661B2B8D2128000B405C /* HomeView.swift */; };
 		C4FE661E2B8D212A000B405C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FE661D2B8D212A000B405C /* Assets.xcassets */; };
 		C4FE66212B8D212A000B405C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66202B8D212A000B405C /* Preview Assets.xcassets */; };
+		C4FE662B2B8D2276000B405C /* AstronomicalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE662A2B8D2276000B405C /* AstronomicalObject.swift */; };
+		C4FE662D2B8D22BC000B405C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE662C2B8D22BC000B405C /* HomeViewModel.swift */; };
+		C4FE66302B8D2301000B405C /* AstronomicalObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE662F2B8D2301000B405C /* AstronomicalObjectService.swift */; };
+		C4FE66332B8D24F0000B405C /* SplineRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = C4FE66322B8D24F0000B405C /* SplineRuntime */; };
+		C4FE66352B8D2667000B405C /* AstronomicalObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE66342B8D2667000B405C /* AstronomicalObjectView.swift */; };
+		C4FE663D2B8E7BA9000B405C /* AstronomicalObjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE663C2B8E7BA9000B405C /* AstronomicalObjectDetailView.swift */; };
+		C4FE66412B8E9E7C000B405C /* jupiter.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66402B8E9E7C000B405C /* jupiter.splineswift */; };
+		C4FE664B2B8E9F4C000B405C /* earth.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66422B8E9F4C000B405C /* earth.splineswift */; };
+		C4FE664C2B8E9F4C000B405C /* uranus.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66432B8E9F4C000B405C /* uranus.splineswift */; };
+		C4FE664E2B8E9F4C000B405C /* mars.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66452B8E9F4C000B405C /* mars.splineswift */; };
+		C4FE664F2B8E9F4C000B405C /* mercury.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66462B8E9F4C000B405C /* mercury.splineswift */; };
+		C4FE66502B8E9F4C000B405C /* moon.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66472B8E9F4C000B405C /* moon.splineswift */; };
+		C4FE66512B8E9F4C000B405C /* neptune.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66482B8E9F4C000B405C /* neptune.splineswift */; };
+		C4FE66522B8E9F4C000B405C /* saturn.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66492B8E9F4C000B405C /* saturn.splineswift */; };
+		C4FE66532B8E9F4C000B405C /* sun.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE664A2B8E9F4C000B405C /* sun.splineswift */; };
+		C4FE66552B8EB847000B405C /* venus.splineswift in Resources */ = {isa = PBXBuildFile; fileRef = C4FE66542B8EB847000B405C /* venus.splineswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4FE66162B8D2128000B405C /* SolarSystemDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystemDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FE66192B8D2128000B405C /* SolarSystemDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemDemoApp.swift; sourceTree = "<group>"; };
-		C4FE661B2B8D2128000B405C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4FE661B2B8D2128000B405C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C4FE661D2B8D212A000B405C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4FE66202B8D212A000B405C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4FE662A2B8D2276000B405C /* AstronomicalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomicalObject.swift; sourceTree = "<group>"; };
+		C4FE662C2B8D22BC000B405C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C4FE662F2B8D2301000B405C /* AstronomicalObjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomicalObjectService.swift; sourceTree = "<group>"; };
+		C4FE66342B8D2667000B405C /* AstronomicalObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomicalObjectView.swift; sourceTree = "<group>"; };
+		C4FE663C2B8E7BA9000B405C /* AstronomicalObjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomicalObjectDetailView.swift; sourceTree = "<group>"; };
+		C4FE66402B8E9E7C000B405C /* jupiter.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = jupiter.splineswift; sourceTree = "<group>"; };
+		C4FE66422B8E9F4C000B405C /* earth.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = earth.splineswift; sourceTree = "<group>"; };
+		C4FE66432B8E9F4C000B405C /* uranus.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = uranus.splineswift; sourceTree = "<group>"; };
+		C4FE66452B8E9F4C000B405C /* mars.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = mars.splineswift; sourceTree = "<group>"; };
+		C4FE66462B8E9F4C000B405C /* mercury.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = mercury.splineswift; sourceTree = "<group>"; };
+		C4FE66472B8E9F4C000B405C /* moon.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = moon.splineswift; sourceTree = "<group>"; };
+		C4FE66482B8E9F4C000B405C /* neptune.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = neptune.splineswift; sourceTree = "<group>"; };
+		C4FE66492B8E9F4C000B405C /* saturn.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = saturn.splineswift; sourceTree = "<group>"; };
+		C4FE664A2B8E9F4C000B405C /* sun.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun.splineswift; sourceTree = "<group>"; };
+		C4FE66542B8EB847000B405C /* venus.splineswift */ = {isa = PBXFileReference; lastKnownFileType = file; path = venus.splineswift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FE66332B8D24F0000B405C /* SplineRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				C4FE66192B8D2128000B405C /* SolarSystemDemoApp.swift */,
-				C4FE661B2B8D2128000B405C /* ContentView.swift */,
+				C4FE66272B8D21EE000B405C /* Views */,
+				C4FE66282B8D220F000B405C /* ViewModels */,
+				C4FE66292B8D2215000B405C /* Models */,
+				C4FE662E2B8D22EC000B405C /* Services */,
+				C4FE663E2B8E9E5F000B405C /* SplineAssets */,
 				C4FE661D2B8D212A000B405C /* Assets.xcassets */,
 				C4FE661F2B8D212A000B405C /* Preview Content */,
 			);
@@ -65,6 +101,57 @@
 				C4FE66202B8D212A000B405C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4FE66272B8D21EE000B405C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE661B2B8D2128000B405C /* HomeView.swift */,
+				C4FE66342B8D2667000B405C /* AstronomicalObjectView.swift */,
+				C4FE663C2B8E7BA9000B405C /* AstronomicalObjectDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4FE66282B8D220F000B405C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE662C2B8D22BC000B405C /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C4FE66292B8D2215000B405C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE662A2B8D2276000B405C /* AstronomicalObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4FE662E2B8D22EC000B405C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE662F2B8D2301000B405C /* AstronomicalObjectService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4FE663E2B8E9E5F000B405C /* SplineAssets */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE66402B8E9E7C000B405C /* jupiter.splineswift */,
+				C4FE66422B8E9F4C000B405C /* earth.splineswift */,
+				C4FE66452B8E9F4C000B405C /* mars.splineswift */,
+				C4FE66462B8E9F4C000B405C /* mercury.splineswift */,
+				C4FE66472B8E9F4C000B405C /* moon.splineswift */,
+				C4FE66482B8E9F4C000B405C /* neptune.splineswift */,
+				C4FE66492B8E9F4C000B405C /* saturn.splineswift */,
+				C4FE664A2B8E9F4C000B405C /* sun.splineswift */,
+				C4FE66542B8EB847000B405C /* venus.splineswift */,
+				C4FE66432B8E9F4C000B405C /* uranus.splineswift */,
+			);
+			path = SplineAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +170,9 @@
 			dependencies = (
 			);
 			name = SolarSystemDemo;
+			packageProductDependencies = (
+				C4FE66322B8D24F0000B405C /* SplineRuntime */,
+			);
 			productName = SolarSystemDemo;
 			productReference = C4FE66162B8D2128000B405C /* SolarSystemDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +201,9 @@
 				Base,
 			);
 			mainGroup = C4FE660D2B8D2128000B405C;
+			packageReferences = (
+				C4FE66312B8D24F0000B405C /* XCRemoteSwiftPackageReference "spline-ios" */,
+			);
 			productRefGroup = C4FE66172B8D2128000B405C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +218,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FE66552B8EB847000B405C /* venus.splineswift in Resources */,
+				C4FE664F2B8E9F4C000B405C /* mercury.splineswift in Resources */,
+				C4FE66502B8E9F4C000B405C /* moon.splineswift in Resources */,
+				C4FE66512B8E9F4C000B405C /* neptune.splineswift in Resources */,
 				C4FE66212B8D212A000B405C /* Preview Assets.xcassets in Resources */,
+				C4FE66412B8E9E7C000B405C /* jupiter.splineswift in Resources */,
+				C4FE664E2B8E9F4C000B405C /* mars.splineswift in Resources */,
 				C4FE661E2B8D212A000B405C /* Assets.xcassets in Resources */,
+				C4FE664B2B8E9F4C000B405C /* earth.splineswift in Resources */,
+				C4FE664C2B8E9F4C000B405C /* uranus.splineswift in Resources */,
+				C4FE66522B8E9F4C000B405C /* saturn.splineswift in Resources */,
+				C4FE66532B8E9F4C000B405C /* sun.splineswift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FE661C2B8D2128000B405C /* ContentView.swift in Sources */,
+				C4FE662B2B8D2276000B405C /* AstronomicalObject.swift in Sources */,
+				C4FE661C2B8D2128000B405C /* HomeView.swift in Sources */,
 				C4FE661A2B8D2128000B405C /* SolarSystemDemoApp.swift in Sources */,
+				C4FE66302B8D2301000B405C /* AstronomicalObjectService.swift in Sources */,
+				C4FE663D2B8E7BA9000B405C /* AstronomicalObjectDetailView.swift in Sources */,
+				C4FE662D2B8D22BC000B405C /* HomeViewModel.swift in Sources */,
+				C4FE66352B8D2667000B405C /* AstronomicalObjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4FE66312B8D24F0000B405C /* XCRemoteSwiftPackageReference "spline-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/splinetool/spline-ios?tab=readme-ov-file";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4FE66322B8D24F0000B405C /* SplineRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4FE66312B8D24F0000B405C /* XCRemoteSwiftPackageReference "spline-ios" */;
+			productName = SplineRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4FE660E2B8D2128000B405C /* Project object */;
 }
