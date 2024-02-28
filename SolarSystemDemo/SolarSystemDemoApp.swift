@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SolarSystemDemoApp: App {
+    @StateObject private var viewModel = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(viewModel)
         }
     }
 }

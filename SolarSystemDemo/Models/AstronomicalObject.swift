@@ -11,4 +11,8 @@ struct AstronomicalObject {
     let id = UUID()
     let name: String
     let imageName: String
+    
+    var getAstronomicalObjectURL: URL? {
+        Bundle.main.url(forResource: self.name.lowercased(), withExtension: "splineswift")
+    }
 }

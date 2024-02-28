@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var viewModel = HomeViewModel()
+    @EnvironmentObject var viewModel: HomeViewModel
+    @State private var showingAstronomicalObjectDetailView = false
+    @State private var selectedAstronomicalObject: AstronomicalObject? = nil
     
     let columns = [GridItem(.adaptive(minimum: 300, maximum: 300), spacing: 10)]
     
@@ -17,8 +19,15 @@ struct HomeView: View {
             LazyVGrid(columns: columns, spacing: 10){
                 ForEach(viewModel.astronomicalObjects, id: \.id) { astronomicalObject in
                     AstronomicalObjectView(astronomicalObject: astronomicalObject)
+                        .onTapGesture {
+                            selectedAstronomicalObject = astronomicalObject
+                            showingAstronomicalObjectDetailView.toggle()
+                        }
                 }
             }
+        }
+        .sheet(isPresented: $showingAstronomicalObjectDetailView) {
+            AstronomicalObjectDetailView(astronomicalObject: $selectedAstronomicalObject)
         }
     }
 }

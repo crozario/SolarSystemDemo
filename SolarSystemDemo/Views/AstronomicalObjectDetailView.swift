@@ -9,36 +9,23 @@ import SwiftUI
 import SplineRuntime
 
 struct AstronomicalObjectDetailView: View {
-    let astronomicalObject: AstronomicalObject
-    let localObjectURL: URL
-    
-    init(astronomicalObject: AstronomicalObject) {
-        self.astronomicalObject = astronomicalObject
-        self.localObjectURL = Bundle.main.url(forResource: astronomicalObject.name.lowercased(), withExtension: "splineswift")!
-    }
+    @Binding var astronomicalObject: AstronomicalObject?
     
     var body: some View {
-        VStack {
-            try? SplineView(sceneFileURL: localObjectURL)
-                .ignoresSafeArea(.all)
-                .frame(height: 400)
-            
+        if let astronomicalObject = astronomicalObject, let url = astronomicalObject.getAstronomicalObjectURL {
             VStack {
-                Text(astronomicalObject.name)
-                    .font(.title.bold())
+                try? SplineView(sceneFileURL: url)
+                    .ignoresSafeArea(.all)
+                    .frame(height: 400)
+                
+                VStack {
+                    Text(astronomicalObject.name)
+                        .font(.title.bold())
+                }
+                .padding()
+                
+                Spacer()
             }
-            .padding()
-            
-            Spacer()
         }
     }
-}
-        // let url = Bundle.main.url(forResource: "scene", withExtension: "splineswift")!
-struct AstronomicalObjectDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        let earthObject = AstronomicalObjectService().fetchAstronomicalObjectService()[0]
-        
-        AstronomicalObjectDetailView(astronomicalObject: earthObject)
-    }
-
 }
